@@ -552,7 +552,7 @@ body {
   width: 530px; }
 
 .design-background {
-  background: url("../img/Bg.png") no-repeat;
+  background: url("img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px; }
@@ -587,13 +587,13 @@ body {
   .section-in-two-text h3 {
     margin-bottom: 15px; }
   .section-in-two-text li {
-    background: url("../img/list-marker.svg") no-repeat;
+    background: url("img/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
     margin-bottom: 10px; }
 
 .section-hero {
   position: relative;
-  background: url("../img/oval-background.png") no-repeat;
+  background: url("img/oval-background.png") no-repeat;
   background-size: 100% 100%; }
   .section-hero h2 {
     margin: 0 auto 25px;
