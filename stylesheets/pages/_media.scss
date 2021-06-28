@@ -1,0 +1,130 @@
+@media all and (max-width: 1128px){
+  .container {
+    width: 1000px;
+  }
+  .header-navigation ul {
+    margin-left: 0;
+  }
+  .news-card div {
+    width: 269px;
+  }
+}
+
+@media all and (max-width: 1024px){
+  .container {
+    width: 970px;
+  }
+
+  .main-section img {
+    width: 50%;
+  }
+  .section-in-two img {
+    width: 90%;
+  }
+  .section-hero img:nth-child(4) {
+    left: 20px;
+  }
+  .section-hero img:nth-child(5) {
+    left: 360px;
+  }
+  .section-hero img:last-child {
+    left: 85px;
+    top: 160px;
+  }
+}
+
+@media all and (max-width: 960px){
+  .container {
+    width: 740px;
+  }
+  .header-navigation ul {
+    display: none;
+  }
+  .main-section-text {
+    width: 100%;
+  }
+  .main-section img {
+    display: none;
+  }
+  .section-hero img {
+    display: none;
+  }
+  .design-tools-cards {
+    flex-wrap: wrap;
+  }
+  .design-background {
+    background-position-y: bottom;
+    background-size: 100%;
+  }
+  .section-hero h2 {
+    padding-top: 140px;
+  }
+  .section-hero button {
+    margin-bottom: 180px;
+  }
+  .news-card div:last-child {
+    display: none;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .tel-form {
+    width: 275px;
+    margin-top: -140px;
+  }
+}
+@media all and (max-width: 740px){
+  .container {
+    width: 100%;
+  }
+  .header-buttons{
+    button {
+      display: none;
+    }
+    .hamburger{
+      display: inline-block;
+
+    }
+  }
+  .section-in-two {
+    flex-direction: column;
+  }
+  .news-card div:first-child {
+    display: none;
+  }
+  .tel-form{
+    h3, input{
+      display: none;
+    }
+  }
+}
+@media all and (max-width: 550px){
+  .name-section{
+    width: 100%;
+  }
+  .design-tools-cards div{
+    margin: 0 auto;
+  }
+  .section-in-two-text {
+    width: 100%;
+  }
+  .section-hero p {
+    width: 100%;
+  }
+  .news-card div {
+    margin: 0 auto;
+  }
+  .footer {
+    flex-direction: column;
+    margin: 30px auto;
+    .logotype{
+      margin-bottom: 10px;
+    }
+    .tel-form {
+      display: none;
+    }
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+.logotype{
+  display: flex;
+  img, h1{
+    align-self: center;
+    margin-right: 13px;
+
+  }
+}
+.header-navigation{
+  display: flex;
+  justify-content: space-between;
+  ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    width: 350px;
+    margin-left: 225px;
+    li{
+      align-self: center;
+    }
+    a{
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+}
+.header-buttons{
+  display: flex;
+  justify-content: space-between;
+  button{
+    align-self: center;
+    margin-right: 15px;
+  }
+  .gray-button{
+    margin-left: 20px;
+  }
+  .hamburger {
+    display: none;
+    rect{
+      fill: $yellow-button-color;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.section-news {
+  padding-bottom: 120px;
+  border-bottom: 1px solid $light-grey  ;
+  h2{
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 55px;
+  }
+}
+.news-card {
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 348px;
+    margin-bottom: 45px;
+    img {
+      width: 100%;
+    }
+    span {
+      margin: 25px 0 15px;
+    }
+  }
+}
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  a{
+    margin-left: 10px;
+    .dot {
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $light-grey;
+    }
+    .active{
+      background-color: $yellow-button-color;
+    }
+  }
+}

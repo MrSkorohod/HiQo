@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button {
+  border-radius: 7px;
+  padding: 15px 25px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.yellow-button {
+  background: $yellow-button-color;
+  border-color: $white-color;
+}
+.gray-button{
+  background: $white-color;
+  border-color: $gray-button-color;
+}
+.playing-button {
+  background: $white-color;
+  border: 0;
+  color: $yellow-button-color;
+  padding: 0;
+  margin-left: 25px;
+  &:before {
+    content: url('../img/triangle.svg');
+    vertical-align: sub;
+    padding-right: 8px;
+  }
+}
