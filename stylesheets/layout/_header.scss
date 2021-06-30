@@ -6,9 +6,9 @@
   justify-content: space-between;
   margin-top: 44px;
 }
-.logotype{
+.header-logotype{
   display: flex;
-  img, h1{
+  .header-logotype-img, .header-logotype-name{
     align-self: center;
     margin-right: 13px;
 
@@ -17,16 +17,16 @@
 .header-navigation{
   display: flex;
   justify-content: space-between;
-  ul{
+  .header-navigation-list{
     list-style: none;
     justify-content: space-between;
     display: flex;
     width: 350px;
     margin-left: 225px;
-    li{
+    .header-navigation-item{
       align-self: center;
     }
-    a{
+    .header-navigation-link{
       color: $brand-color;
       text-decoration: none;
     }

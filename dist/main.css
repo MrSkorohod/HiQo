@@ -341,7 +341,7 @@ body {
 .header-navigation {
   color: #222222; }
 
-.logotype h1 {
+.header-logotype-name {
   color: #173a56;
   font: 700 30px/34px "Poppins", sans-serif; }
 
@@ -353,11 +353,11 @@ body {
   color: #173a56;
   font: 600 16px/24px "Poppins", sans-serif; }
 
-.main-headers {
+.main-section-name {
   color: #2f281e;
   font: 700 44px/54px "Poppins", sans-serif; }
 
-.main-section-text p {
+.main-section-parag {
   color: #544837;
   font: 400 18px/28px "Poppins", sans-serif; }
 
@@ -365,69 +365,61 @@ body {
   font: 600 16px/24px "Poppins", sans-serif;
   text-decoration: underline; }
 
-.name-section {
+.design-name {
   color: #2f281e;
   font: 700 36px/54px "Poppins", sans-serif; }
 
-.design-tools-cards h2 {
+.design-card .design-card-header {
   color: #2f281e;
   font: 600 22px/33px "Poppins", sans-serif; }
 
-.design-tools-cards p {
+.design-card .design-card-text {
   color: #544837;
   font: 500 16px/26px "Poppins", sans-serif; }
 
-.section-in-two-text span {
+.twoBlocks .twoBlocks-text-miniHead {
   color: #544837;
   font: 500 16px/24px "Poppins", sans-serif; }
 
-.section-in-two-text h2 {
+.twoBlocks .twoBlocks-text-header {
   color: #2f281e;
   font: 700 36px/64px "Poppins", sans-serif; }
 
-.section-in-two-text p, .section-in-two-text li {
+.twoBlocks .twoBlocks-text-article, .twoBlocks .twoBlocks-text-listItem {
   color: #544837;
   font: 500 16px/24px "Poppins", sans-serif; }
 
-.section-in-two-text h3 {
+.twoBlocks .twoBlocks-text-subheader {
   color: #2f281e;
   font: 700 16px/24px "Poppins", sans-serif; }
 
-.section-hero h2 {
-  color: #2f281e;
-  font: 700 36px/54px "Poppins", sans-serif; }
-
-.section-hero p {
-  color: #544837;
-  font: 500 16px/26px "Poppins", sans-serif; }
-
-.section-news h2 {
+.news .news-mainHeader {
   color: #2f281e;
   font: 700 34px/51px "Poppins", sans-serif; }
 
-.section-news p {
+.news .news-mainText {
   color: #544837;
   font: 500 16px/26px "Poppins", sans-serif; }
 
-.section-news span {
+.news .news-card-smText {
   color: #544837;
   font: 400 16px/28px "Poppins", sans-serif; }
 
-.section-news .author-name {
+.news .author-name {
   font-weight: bold; }
 
-.section-news h3 {
+.news .news-card-header {
   color: #2f281e;
   font: 700 24px/34px "Poppins", sans-serif; }
 
-.section-news .active-title {
+.news .active-title {
   color: #FF9900; }
 
-.footer h3 {
+.footer .quick-links-header, .footer .legal-stuff-header, .footer .tel-form-header {
   color: #2f281e;
   font: 900 20px/30px "Poppins", sans-serif; }
 
-.footer li a {
+.footer .legal-stuff-item, .footer quick-links-item {
   color: #544837;
   font: 400 16px/35px "Poppins", sans-serif; }
 
@@ -495,24 +487,24 @@ body {
   justify-content: space-between;
   margin-top: 44px; }
 
-.logotype {
+.header-logotype {
   display: flex; }
-  .logotype img, .logotype h1 {
+  .header-logotype .header-logotype-img, .header-logotype .header-logotype-name {
     align-self: center;
     margin-right: 13px; }
 
 .header-navigation {
   display: flex;
   justify-content: space-between; }
-  .header-navigation ul {
+  .header-navigation .header-navigation-list {
     list-style: none;
     justify-content: space-between;
     display: flex;
     width: 350px;
     margin-left: 225px; }
-    .header-navigation ul li {
+    .header-navigation .header-navigation-list .header-navigation-item {
       align-self: center; }
-    .header-navigation ul a {
+    .header-navigation .header-navigation-list .header-navigation-link {
       color: #2f281e;
       text-decoration: none; }
 
@@ -536,11 +528,11 @@ body {
   .main-section .main-section-text {
     width: 500px;
     margin-top: 100px; }
-  .main-section .main-headers {
+  .main-section .main-section-name {
     margin-bottom: 35px; }
-  .main-section p {
+  .main-section .main-section-parag {
     margin-bottom: 50px; }
-  .main-section img {
+  .main-section .main-section-img {
     margin-top: 35px; }
 
 .center-style {
@@ -552,106 +544,76 @@ body {
   width: 530px; }
 
 .design-background {
-  background: url("img/Bg.png") no-repeat;
+  background: url("../assets/img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px; }
-  .design-background .design-tools-cards {
+  .design-background .design-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 60px; }
-    .design-background .design-tools-cards div {
+    .design-background .design-cards .design-card {
       width: 240px; }
-    .design-background .design-tools-cards img {
+    .design-background .design-cards .design-card-img {
       margin-bottom: 30px; }
-    .design-background .design-tools-cards h2 {
+    .design-background .design-cards .design-card-header {
       margin-bottom: 15px; }
-    .design-background .design-tools-cards p {
+    .design-background .design-cards .design-card-text {
       margin-bottom: 60px; }
-  .design-background button {
+  .design-background .yellow-button {
     margin-bottom: 90px; }
 
-.section-in-two {
+.twoBlocks {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px; }
 
-.section-in-two-text {
+.twoBlocks-text {
   width: 482px; }
-  .section-in-two-text span {
+  .twoBlocks-text .twoBlocks-text-miniHead {
     margin-bottom: 7px; }
-  .section-in-two-text h2 {
+  .twoBlocks-text .twoBlocks-text-header {
     margin-bottom: 25px; }
-  .section-in-two-text p {
+  .twoBlocks-text .twoBlocks-text-article {
     margin-bottom: 30px; }
-  .section-in-two-text h3 {
+  .twoBlocks-text .twoBlocks-text-subheader {
     margin-bottom: 15px; }
-  .section-in-two-text li {
-    background: url("img/list-marker.svg") no-repeat;
+  .twoBlocks-text .twoBlocks-text-listItem {
+    background: url("../assets/icons/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
     margin-bottom: 10px; }
 
-.section-hero {
-  position: relative;
-  background: url("img/oval-background.png") no-repeat;
-  background-size: 100% 100%; }
-  .section-hero h2 {
-    margin: 0 auto 25px;
-    padding-top: 230px; }
-  .section-hero p {
-    margin-bottom: 45px;
-    width: 540px; }
-  .section-hero button {
-    margin-bottom: 380px; }
-  .section-hero img {
-    position: absolute; }
-    .section-hero img:nth-child(4) {
-      left: 140px;
-      top: 470px; }
-    .section-hero img:nth-child(5) {
-      left: 530px;
-      top: 560px; }
-    .section-hero img:nth-child(6) {
-      left: 60vw;
-      top: 115px; }
-    .section-hero img:nth-child(7) {
-      left: 70vw;
-      top: 440px; }
-    .section-hero img:last-child {
-      left: 125px;
-      top: 180px; }
-
-.section-news {
+.news {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef; }
-  .section-news h2 {
+  .news .news-mainHeader {
     margin-bottom: 10px; }
-  .section-news p {
+  .news .news-mainText {
     margin-bottom: 55px; }
 
-.news-card {
+.news-cards {
   display: flex;
   justify-content: space-between; }
-  .news-card div {
+  .news-cards .news-card {
     width: 348px;
     margin-bottom: 45px; }
-    .news-card div img {
+    .news-cards .news-card .news-card-img {
       width: 100%; }
-    .news-card div span {
+    .news-cards .news-card .news-card-smText {
       margin: 25px 0 15px; }
 
 .carousel-buttons {
   display: flex;
   justify-content: center; }
-  .carousel-buttons a {
+  .carousel-buttons .carousel-button {
     margin-left: 10px; }
-    .carousel-buttons a .dot {
+    .carousel-buttons .carousel-button .dot {
       display: block;
       width: 16px;
       height: 16px;
       border-radius: 50%;
       background-color: #efefef; }
-    .carousel-buttons a .active {
+    .carousel-buttons .carousel-button .active {
       background-color: #FF9900; }
 
 .footer {
@@ -661,7 +623,7 @@ body {
   .footer .logotype {
     height: 25px; }
 
-h3 {
+.quick-links-header, .legal-stuff-header, .tel-form-header {
   margin-bottom: 40px; }
 
 .tel-form {
@@ -674,7 +636,7 @@ h3 {
     border-radius: 10px;
     margin-bottom: 25px;
     padding-left: 15px; }
-  .tel-form button {
+  .tel-form .yellow-button {
     align-self: flex-start; }
 
 button {
@@ -698,7 +660,7 @@ button {
   padding: 0;
   margin-left: 25px; }
   .playing-button:before {
-    content: url("img/triangle.svg");
+    content: url("../assets/icons/triangle.svg");
     vertical-align: sub;
     padding-right: 8px; }
 

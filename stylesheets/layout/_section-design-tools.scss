@@ -8,28 +8,28 @@
 }
 
 .design-background {
-  background: url("img/Bg.png") no-repeat;
+  background: url("../assets/img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px;
-  .design-tools-cards{
+  .design-cards{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    div{
+    .design-card{
       width: 240px;
     }
-    img{
+    .design-card-img{
       margin-bottom: 30px;
     }
-    h2 {
+    .design-card-header {
       margin-bottom: 15px;
     }
-    p {
+    .design-card-text {
       margin-bottom: 60px;
     }
   }
-  button{
+  .yellow-button{
     margin-bottom: 90px;
   }
 }

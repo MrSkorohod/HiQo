@@ -1,24 +1,24 @@
-.section-in-two {
+.twoBlocks {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
 }
-.section-in-two-text{
+.twoBlocks-text{
   width: 482px;
-  span{
+  .twoBlocks-text-miniHead{
     margin-bottom: 7px;
   }
-  h2 {
+  .twoBlocks-text-header {
     margin-bottom: 25px;
   }
-  p{
+  .twoBlocks-text-article{
     margin-bottom: 30px;
   }
-  h3 {
+  .twoBlocks-text-subheader {
     margin-bottom: 15px;
   }
-  li {
-    background: url("img/list-marker.svg") no-repeat;
+  .twoBlocks-text-listItem {
+    background: url("../assets/icons/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
     margin-bottom: 10px;
   }
