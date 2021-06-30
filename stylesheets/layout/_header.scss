@@ -8,25 +8,25 @@
 }
 .logotype{
   display: flex;
-  img, h1{
+  .logotype-image, .logotype-header{
     align-self: center;
     margin-right: 13px;
 
   }
 }
-.header-navigation{
+.headerNavigation{
   display: flex;
   justify-content: space-between;
-  ul{
+  .headerNavigation-list{
     list-style: none;
     justify-content: space-between;
     display: flex;
     width: 350px;
     margin-left: 225px;
-    li{
+    .headerNavigation-item{
       align-self: center;
     }
-    a{
+    .headerNavigation-link{
       color: $brand-color;
       text-decoration: none;
     }

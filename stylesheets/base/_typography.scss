@@ -6,13 +6,15 @@ body {
   color: $text-color;
   font: 400 14px / 28px $text-font;
 }
-.header-navigation {
+.headerNavigation {
   color: $text-color;
 }
-.logotype h1{
+
+.logotype-header{
   color: $logo-color;
   font: 700 30px / 34px $text-font;
 }
+
 .yellow-button{
   color: $light-grey;
   font: 600 16px / 24px $text-font;
@@ -21,67 +23,62 @@ body {
   color: $logo-color;
   font: 600 16px / 24px $text-font;
 }
-.main-headers {
+
+.mainSection-text-headers {
   color: $brand-color;
   font: 700 44px / 54px $text-font;
 }
-.main-section-text p {
+.mainSection-text-parag {
   color: $paragraph-color;
   font: 400 18px / 28px $text-font;
 }
+
 .playing-button {
   font: 600 16px / 24px $text-font;
   text-decoration: underline;
 }
-.name-section {
+
+.designTools-name {
   color: $brand-color;
   font: 700 36px / 54px $text-font;
 }
-.design-tools-cards{
-  h2 {
+
+.design-cards{
+  .design-card-name {
     color: $brand-color;
     font: 600 22px / 33px $text-font;
   }
-  p {
+  .design-card-text {
     color: $paragraph-color;
     font: 500 16px / 26px $text-font;
   }
 }
-.section-in-two-text{
-  span {
+
+.twoBlocks-text{
+  &-supname {
     color: $paragraph-color;
     font: 500 16px / 24px $text-font;
   }
-  h2 {
+  &-name {
     color: $brand-color;
     font: 700 36px / 64px $text-font;
   }
-  p, li {
+  &-parag, &-listItem  {
     color: $paragraph-color;
     font: 500 16px / 24px $text-font;
   }
-  h3 {
+  &-subhead {
     color: $brand-color;
     font: 700 16px / 24px $text-font;
   }
+}
 
-}
-.section-hero{
-  h2 {
-    color: $brand-color;
-    font: 700 36px / 54px $text-font;
-  }
-  p {
-    color: $paragraph-color;
-    font: 500 16px / 26px $text-font;
-  }
-}
-.section-news {
-  h2{
+.sectionNews {
+  &-name{
     color: $brand-color;
     font: 700 34px / 51px $text-font;
   }
-  p {
+  &-text {
     color: $paragraph-color;
     font: 500 16px / 26px $text-font;
   }
@@ -92,7 +89,7 @@ body {
   .author-name{
     font-weight: bold;
   }
-  h3 {
+  .news-card-subhead {
     color: $brand-color;
     font: 700 24px / 34px $text-font;
   }
@@ -100,12 +97,13 @@ body {
     color: $yellow-button-color;
   }
 }
+
 .footer {
-  h3{
+  .quickLinks-name, .legalStuff-name, .tel-form-name{
     color: $brand-color;
     font: 900 20px / 30px $text-font;
   }
-  li a {
+  .quickLinks-link, .legalStuff-link {
     color: $paragraph-color;
     font: 400 16px / 35px $text-font;
   }

@@ -1,18 +1,19 @@
-.main-section{
+.mainSection{
   display:flex;
   justify-content: space-between;
   margin-bottom: 110px;
-  .main-section-text{
-    width: 500px;
+  .mainSection-text{
+    width: 50%;
     margin-top: 100px;
   }
-  .main-headers {
+  .mainSection-text-headers {
     margin-bottom: 35px;
   }
-  p {
+  .mainSection-text-parag {
     margin-bottom: 50px;
   }
-  img{
+  .mainSection-image{
+    width: 50%;
     margin-top: 35px;
 
   }
