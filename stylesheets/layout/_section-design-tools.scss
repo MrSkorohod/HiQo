@@ -1,35 +1,47 @@
-.center-style{
+.center-style {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-.designTools-name {
+
+.design-tools-name {
   width: 40%;
+  @include typography-weight700 (36px, 54px);
 }
 
-.designTools-background {
+.design-tools-background {
   background: url("../assets/img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px;
-  .design-cards{
-    display: flex;
-    justify-content: space-between;
+
+  .design-cards {
+    @include display;
     margin-top: 60px;
-    .design-card{
+
+    .design-card {
       width: 34%;
-      &-image{
+
+      &-image {
         margin-bottom: 30px;
       }
+
       &-name {
         margin-bottom: 15px;
+        @include typography-weight600($brand-color, 22px, 33px);
       }
+
       &-text {
         margin-bottom: 60px;
+        @include typography-style-parag(500, 16px, 26px);
       }
+
     }
+
   }
-  .yellow-button{
+
+  .sign-up-button {
     margin-bottom: 90px;
   }
+  
 }

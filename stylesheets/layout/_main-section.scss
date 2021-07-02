@@ -1,21 +1,27 @@
-.mainSection{
-  display:flex;
-  justify-content: space-between;
+.main-section {
+  @include display;
   margin-bottom: 110px;
-  .mainSection-text{
+
+  &-text {
     width: 50%;
     margin-top: 100px;
-  }
-  .mainSection-text-headers {
-    margin-bottom: 35px;
-  }
-  .mainSection-text-parag {
-    margin-bottom: 50px;
-  }
-  .mainSection-image{
-    width: 50%;
-    margin-top: 35px;
+
+    &-header {
+      margin-bottom: 35px;
+      @include typography-weight700 (44px, 54px);
+    }
+
+    &-parag {
+      margin-bottom: 50px;
+      @include typography-style-parag(400, 18px, 28px);
+    }
 
   }
+
+  &-image {
+    width: 50%;
+    margin-top: 35px;
+  }
+  
 }
 

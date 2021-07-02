@@ -1,51 +1,56 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
 .header {
-  display: flex;
-  justify-content: space-between;
+  @include display;
   margin-top: 44px;
 }
-.logotype{
+
+.logotype {
   display: flex;
-  .logotype-image, .logotype-header{
+  
+  .logotype-image, .logotype-header {
     align-self: center;
     margin-right: 13px;
+    @include typography-weight700 (30px, 34px);
+    color: $logo-color;
+  }
 
-  }
 }
-.headerNavigation{
-  display: flex;
-  justify-content: space-between;
-  .headerNavigation-list{
+
+.header-navigation {
+  @include display;
+  color: $text-color;
+
+  &-list {
     list-style: none;
-    justify-content: space-between;
-    display: flex;
-    width: 350px;
+    @include display;
     margin-left: 225px;
-    .headerNavigation-item{
-      align-self: center;
-    }
-    .headerNavigation-link{
-      color: $brand-color;
-      text-decoration: none;
-    }
   }
+
+  &-item {
+    margin-left: 26px;
+    align-self: center;
+  }
+
+  &-link {
+    color: $brand-color;
+    text-decoration: none;
+  }
+
 }
-.header-buttons{
-  display: flex;
-  justify-content: space-between;
-  button{
+
+.header-buttons {
+  @include display;
+
+  button {
     align-self: center;
     margin-right: 15px;
   }
-  .gray-button{
+
+  .sign-in-button {
     margin-left: 20px;
   }
+
   .hamburger {
     display: none;
-    rect{
-      fill: $yellow-button-color;
-    }
   }
+  
 }
