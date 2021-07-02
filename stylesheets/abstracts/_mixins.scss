@@ -12,35 +12,9 @@
   justify-content: space-between;
 }
 
-@mixin typography($size, $lineHeight) {
+@mixin typography($weight, $size, $lineHeight) {
+  font-weight: $weight;
   font-size: $size;
   line-height: $lineHeight;
-}
-
-@mixin typography-style-parag($weight, $size, $lineHeight) {
-  @include typography($size, $lineHeight);
-  color: $paragraph-color;
-  font-weight: $weight;
   font-family: $text-font;
 }
-
-@mixin typography-weight600 ($color, $size, $lineHeight) {
-  color: $color;
-  font-weight: 600;
-  @include typography($size, $lineHeight);
-  font-family: $text-font;
-}
-
-@mixin typography-weight700 ($size, $lineHeight) {
-  color: $brand-color;
-  font-weight: 700;
-  @include typography($size, $lineHeight);
-  font-family: $text-font;
-}
-
-@mixin typography-weight900 ($size, $lineHeight) {
-  font-weight: 900;
-  @include typography($size, $lineHeight);
-  font-family: $text-font;
-}
-

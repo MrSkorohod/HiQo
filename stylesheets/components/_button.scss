@@ -5,31 +5,16 @@ button {
   cursor: pointer;
 }
 
-.sign-up-button {
+.btn-primary {
   background: $yellow-color;
   border-color: $white-color;
-  @include typography-weight600($light-grey, 16px, 24px);
+  color: $light-grey;
+  @include typography(600, 16px, 24px);
 }
 
-.sign-in-button {
+.btn-secondary {
   background: $white-color;
   border-color: $gray-color;
-  @include typography-weight600($logo-color, 16px, 24px);
-}
-
-.playing-button {
-  background: $white-color;
-  border: 0;
-  color: $yellow-color;
-  @include typography-weight600($yellow-color, 16px, 24px);
-  text-decoration: underline;
-  padding: 0;
-  margin-left: 25px;
-
-  &:before {
-    content: url('../assets/icons/triangle.svg');
-    vertical-align: sub;
-    padding-right: 8px;
-  }
-
+  color: $logo-color;
+  @include typography(600, 16px, 24px);
 }

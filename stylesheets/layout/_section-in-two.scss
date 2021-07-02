@@ -21,29 +21,34 @@
   &-supname {
     display: block;
     margin-bottom: 7px;
-    @include typography-style-parag(500, 16px, 24px);
+    @include typography(500, 16px, 24px);
+    color: $paragraph-color;
   }
 
   &-name {
     margin-bottom: 25px;
-    @include typography-weight700 (36px, 64px);
+    @include typography(700, 36px, 64px);
+    color: $brand-color;
   }
 
   &-parag {
     margin-bottom: 30px;
-    @include typography-style-parag(500, 16px, 24px);
+    @include typography(500, 16px, 24px);
+    color: $paragraph-color;
   }
 
   &-subhead {
     margin-bottom: 15px;
-    @include typography-weight700 (16px, 24px);
+    @include typography(700, 16px, 24px);
+    color: $brand-color;
   }
 
   &-listItem {
     background: url("../assets/icons/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
     margin-bottom: 10px;
-    @include typography-style-parag(500, 16px, 24px);
+    @include typography(500, 16px, 24px);
+    color: $paragraph-color;
   }
 
 }

@@ -6,7 +6,8 @@
 
 .design-tools-name {
   width: 40%;
-  @include typography-weight700 (36px, 54px);
+  @include typography(700, 36px, 54px);
+  color: $brand-color;
 }
 
 .design-tools-background {
@@ -19,8 +20,13 @@
     @include display;
     margin-top: 60px;
 
+    
     .design-card {
       width: 34%;
+      
+      &:not(:last-child) {
+        margin-right: 42px;
+      }
 
       &-image {
         margin-bottom: 30px;
@@ -28,12 +34,14 @@
 
       &-name {
         margin-bottom: 15px;
-        @include typography-weight600($brand-color, 22px, 33px);
+        @include typography(600, 22px, 33px);
+        color: $brand-color;
       }
 
       &-text {
         margin-bottom: 60px;
-        @include typography-style-parag(500, 16px, 26px);
+        @include typography(500, 16px, 26px);
+        color: $paragraph-color;
       }
 
     }

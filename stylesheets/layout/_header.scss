@@ -6,10 +6,11 @@
 .logotype {
   display: flex;
   
-  .logotype-image, .logotype-header {
+  &-image,
+  &-header {
     align-self: center;
     margin-right: 13px;
-    @include typography-weight700 (30px, 34px);
+    @include typography(700, 30px, 34px);
     color: $logo-color;
   }
 
@@ -28,11 +29,6 @@
   &-item {
     margin-left: 26px;
     align-self: center;
-  }
-
-  &-link {
-    color: $brand-color;
-    text-decoration: none;
   }
 
 }

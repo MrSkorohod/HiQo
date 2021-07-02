@@ -4,12 +4,14 @@
 
   &-name {
     margin-bottom: 10px;
-    @include typography-weight700 (34px, 51px);
+    @include typography(700, 34px, 51px);
+    color: $brand-color;
   }
 
   &-text {
     margin-bottom: 55px;
-    @include typography-style-parag(500, 16px, 26px);
+    @include typography(500, 16px, 26px);
+    color: $paragraph-color;
   }
 
 }
@@ -27,7 +29,8 @@
 
     span {
       margin: 25px 0 15px;
-      @include typography-style-parag(400, 16px, 28px);
+      @include typography(400, 16px, 28px);
+      color: $paragraph-color;
     }
 
     .author-name {
@@ -35,7 +38,8 @@
     }
 
     .news-card-subhead {
-      @include typography-weight700 (24px, 34px);
+      @include typography(700, 24px, 34px);
+      color: $brand-color;
     }
 
     .active-title {

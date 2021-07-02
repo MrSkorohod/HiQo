@@ -8,14 +8,32 @@
 
     &-header {
       margin-bottom: 35px;
-      @include typography-weight700 (44px, 54px);
+      @include typography(700, 44px, 54px);
+      color: $brand-color
     }
 
     &-parag {
       margin-bottom: 50px;
-      @include typography-style-parag(400, 18px, 28px);
+      @include typography(400, 18px, 28px);
+      color: $paragraph-color;
     }
 
+    .playing-link {
+      background: $white-color;
+      border: 0;
+      color: $yellow-color;
+      @include typography(600, 16px, 24px);
+      text-decoration: underline;
+      padding: 0;
+      margin-left: 25px;
+    
+      &:before {
+        content: url('../assets/icons/triangle.svg');
+        vertical-align: sub;
+        padding-right: 8px;
+      }
+    
+    }
   }
 
   &-image {

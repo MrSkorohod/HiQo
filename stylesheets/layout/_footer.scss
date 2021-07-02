@@ -7,14 +7,18 @@
   }
 
 }
-.quick-links-name, .legal-stuff-name, .tel-form-name {
+.quick-links-name,
+.legal-stuff-name,
+.tel-form-name {
   margin-bottom: 40px;
   color: $brand-color;
-  @include typography-weight900 (20px, 30px);
+  @include typography(900, 20px, 30px);
 }
 
-.quick-links-link, .legal-stuff-link {
-  @include typography-style-parag(400, 16px, 35px);
+.quick-links-link,
+.legal-stuff-link {
+  @include typography(400, 16px, 35px);
+  color: $paragraph-color;
 }
 
 .tel-form {
@@ -31,7 +35,7 @@
 
     &::placeholder {
         color: $gray-color;
-        @include typography-weight900 (16px, 28px);
+        @include typography(900, 16px, 28px);
       }
 
     }
