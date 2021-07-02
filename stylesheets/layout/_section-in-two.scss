@@ -1,35 +1,49 @@
-.twoBlocks {
-  display: flex;
-  justify-content: space-between;
+.two-blocks {
+  @include display;
   margin-bottom: 120px;
-  &-image{
-    width: 100%;
-  }
 }
-.twoBlocks-text{
+
+.block-image {
+    width: 100%;
+}
+
+.block-text {
   width: 50%;
+
   &:nth-child(2n-1) {
     margin-right: 100px;
   }
+
   &:nth-child(2) {
     margin-left: 100px
   }
-  &-supname{
+
+  &-supname {
     display: block;
     margin-bottom: 7px;
+    @include typography-style-parag(500, 16px, 24px);
   }
+
   &-name {
     margin-bottom: 25px;
+    @include typography-weight700 (36px, 64px);
   }
-  &-parag{
+
+  &-parag {
     margin-bottom: 30px;
+    @include typography-style-parag(500, 16px, 24px);
   }
+
   &-subhead {
     margin-bottom: 15px;
+    @include typography-weight700 (16px, 24px);
   }
+
   &-listItem {
     background: url("../assets/icons/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
     margin-bottom: 10px;
+    @include typography-style-parag(500, 16px, 24px);
   }
+
 }
