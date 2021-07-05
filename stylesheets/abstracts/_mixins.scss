@@ -7,14 +7,20 @@
   }
 }
 
-@mixin display {
+@mixin flex-layout {
   display: flex;
   justify-content: space-between;
 }
 
-@mixin typography($weight, $size, $lineHeight) {
+@mixin typography($weight, $size, $line-height) {
   font-weight: $weight;
   font-size: $size;
-  line-height: $lineHeight;
+  line-height: $line-height;
   font-family: $text-font;
+}
+
+@mixin button-size {
+  border-radius: 7px;
+  padding: 15px 25px;
+  border: 1px solid;
 }

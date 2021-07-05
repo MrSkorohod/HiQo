@@ -1,20 +1,15 @@
-button {
-  border-radius: 7px;
-  padding: 15px 25px;
-  border: 1px solid;
-  cursor: pointer;
-}
-
 .btn-primary {
-  background: $yellow-color;
-  border-color: $white-color;
-  color: $light-grey;
+  @include button-size;
   @include typography(600, 16px, 24px);
+  background: $primary-color;
+  border-color: $white-color;
+  color: $light-color;
 }
 
 .btn-secondary {
-  background: $white-color;
-  border-color: $gray-color;
-  color: $logo-color;
+  @include button-size;
   @include typography(600, 16px, 24px);
+  background: $white-color;
+  border-color: $secondary-color;
+  color: $logo-color;
 }

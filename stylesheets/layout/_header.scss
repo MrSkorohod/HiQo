@@ -1,10 +1,10 @@
 .header {
-  @include display;
+  @include flex-layout;
   margin-top: 44px;
 }
 
 .logotype {
-  display: flex;
+  @include flex-layout;
   
   &-image,
   &-header {
@@ -17,12 +17,12 @@
 }
 
 .header-navigation {
-  @include display;
+  @include flex-layout;
   color: $text-color;
 
   &-list {
     list-style: none;
-    @include display;
+    @include flex-layout;
     margin-left: 225px;
   }
 
@@ -34,7 +34,7 @@
 }
 
 .header-buttons {
-  @include display;
+  @include flex-layout;
 
   button {
     align-self: center;

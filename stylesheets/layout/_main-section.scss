@@ -1,5 +1,5 @@
 .main-section {
-  @include display;
+  @include flex-layout;
   margin-bottom: 110px;
 
   &-text {
@@ -17,11 +17,13 @@
       @include typography(400, 18px, 28px);
       color: $paragraph-color;
     }
+    
+    .btn-primary {
+      padding: 15px 41px;
+    }
 
     .playing-link {
-      background: $white-color;
-      border: 0;
-      color: $yellow-color;
+      color: $primary-color;
       @include typography(600, 16px, 24px);
       text-decoration: underline;
       padding: 0;

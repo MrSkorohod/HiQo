@@ -17,7 +17,7 @@
   margin-bottom: 120px;
 
   .design-cards {
-    @include display;
+    @include flex-layout;
     margin-top: 60px;
 
     
@@ -48,8 +48,9 @@
 
   }
 
-  .sign-up-button {
+  .btn-primary {
     margin-bottom: 90px;
+    padding: 15px 32px;
   }
   
 }

@@ -1,6 +1,6 @@
 .section-news {
   padding-bottom: 120px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $light-color;
 
   &-name {
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
 }
 
 .news-cards {
-  @include display;
+  @include flex-layout;
 
   .news-card {
     width: 32%;
@@ -43,7 +43,7 @@
     }
 
     .active-title {
-      color: $yellow-color;
+      color: $primary-color;
     }
 
   }
@@ -51,7 +51,7 @@
 }
 
 .carousel-buttons {
-  @include display;
+  @include flex-layout;
   justify-content: center;
 
   .dot {
@@ -60,12 +60,12 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: $light-grey;
+    background-color: $light-color;
     cursor: pointer;
   }
 
   .active {
-    background-color: $yellow-color;
+    background-color: $primary-color;
   }
 
 }

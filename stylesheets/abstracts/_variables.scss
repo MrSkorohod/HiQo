@@ -18,7 +18,7 @@ $brand-color: rgba(47, 40, 30, 1) !default;
 
 /// Light grey
 /// @type Color
-$light-grey: rgba(239, 239, 239, 1)  !default;
+$light-color: rgba(239, 239, 239, 1)  !default;
 
 /// Medium grey
 /// @type Color
@@ -30,8 +30,8 @@ $dark-grey: rgb(68, 68, 68) !default;
 
 $paragraph-color: rgba(84, 72, 55, 1);
 $logo-color: rgba(23, 58, 86, 1);
-$yellow-color: #ff9900;
-$gray-color: #bcd0e5;
+$primary-color: #ff9900;
+$secondary-color: #bcd0e5;
 $white-color: #ffffff;
 
 /// Container's maximum width
