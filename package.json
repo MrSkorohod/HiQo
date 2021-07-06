@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "gulp sass",
-    "watch": "gulp sass:watch"
+    "watch": "gulp sass:watch",
+    "server": "gulp server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/MrSkorohod/HiQo#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",

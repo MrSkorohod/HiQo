@@ -60,7 +60,7 @@
     background-size: 100%;
   }
 
-  .news-cards div:last-child {
+  .news-card:last-child {
     display: none;
   }
 
@@ -68,7 +68,7 @@
     flex-wrap: wrap;
   }
 
-  .tel-form {
+  .phone {
     width: 275px;
     margin-top: -140px;
   }
@@ -83,7 +83,8 @@
 
   .header-buttons{
 
-    button {
+    .btn-primary,
+    .btn-secondary {
       display: none;
     }
 
@@ -121,10 +122,10 @@
 
   }
 
-  .tel-form{
+  .phone .quick-links {
 
     &-name,
-    &-input{
+    &-input {
       display: none;
     }
 
@@ -134,7 +135,11 @@
 
 @media all and (max-width: 550px) {
 
-  .design-card{
+    .playing-link {
+      display: none;
+  }
+  
+  .design-card {
     margin: 0 auto;
   }
 
@@ -155,11 +160,10 @@
       margin-bottom: 10px;
     }
 
-    .tel-form {
+    .phone {
       display: none;
     }
 
-    .legal-stuff-name,
     .quick-links-name {
       margin-bottom: 0;
     }
