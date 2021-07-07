@@ -1,29 +1,44 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
 .footer {
-  display: flex;
-  justify-content: space-between;
+  @include flex-layout;
   margin: 100px auto;
-  .logotype{
+
+  .logotype {
     height: 25px;
   }
+
 }
-h3 {
+.quick-links-name {
   margin-bottom: 40px;
+  color: $brand-color;
+  @include typography(900, 20px, 30px);
 }
-.tel-form {
-  display: flex;
+
+.quick-links-link {
+  @include typography(400, 16px, 35px);
+  color: $paragraph-color;
+}
+
+.phone {
+  @include flex-layout;
   flex-direction: column;
   width: 325px;
-  input{
+
+  input {
     height: 50px;
-    border:2px solid $gray-button-color;
+    border:2px solid $secondary-color;
     border-radius: 10px;
     margin-bottom: 25px;
     padding-left: 15px;
+
+    &::placeholder {
+        color: $secondary-color;
+        @include typography(900, 16px, 28px);
+      }
+
+    }
+
   }
-  button{
+
+  .btn-primary {
     align-self: flex-start;
   }
-}

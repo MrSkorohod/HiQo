@@ -1,35 +1,56 @@
-.center-style{
+.center-style {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-.name-section {
-  width: 530px;
+
+.design-tools-name {
+  width: 40%;
+  @include typography(700, 36px, 54px);
+  color: $brand-color;
 }
 
-.design-background {
-  background: url("img/Bg.png") no-repeat;
+.design-tools-background {
+  background: url("../assets/img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px;
-  .design-tools-cards{
-    display: flex;
-    justify-content: space-between;
+
+  .design-cards {
+    @include flex-layout;
     margin-top: 60px;
-    div{
-      width: 240px;
+
+    
+    .design-card {
+      width: 34%;
+      
+      &:not(:last-child) {
+        margin-right: 42px;
+      }
+
+      &-image {
+        margin-bottom: 30px;
+      }
+
+      &-name {
+        margin-bottom: 15px;
+        @include typography(600, 22px, 33px);
+        color: $brand-color;
+      }
+
+      &-text {
+        margin-bottom: 60px;
+        @include typography(500, 16px, 26px);
+        color: $paragraph-color;
+      }
+
     }
-    img{
-      margin-bottom: 30px;
-    }
-    h2 {
-      margin-bottom: 15px;
-    }
-    p {
-      margin-bottom: 60px;
-    }
+
   }
-  button{
+
+  .btn-primary {
     margin-bottom: 90px;
+    padding: 15px 32px;
   }
+  
 }

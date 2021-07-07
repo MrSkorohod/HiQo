@@ -1,29 +1,15 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
-button {
-  border-radius: 7px;
-  padding: 15px 25px;
-  border: 1px solid;
-  cursor: pointer;
-}
-.yellow-button {
-  background: $yellow-button-color;
+.btn-primary {
+  @include button-size;
+  @include typography(600, 16px, 24px);
+  background: $primary-color;
   border-color: $white-color;
+  color: $light-color;
 }
-.gray-button{
+
+.btn-secondary {
+  @include button-size;
+  @include typography(600, 16px, 24px);
   background: $white-color;
-  border-color: $gray-button-color;
-}
-.playing-button {
-  background: $white-color;
-  border: 0;
-  color: $yellow-button-color;
-  padding: 0;
-  margin-left: 25px;
-  &:before {
-    content: url('img/triangle.svg');
-    vertical-align: sub;
-    padding-right: 8px;
-  }
+  border-color: $secondary-color;
+  color: $logo-color;
 }
