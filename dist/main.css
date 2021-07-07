@@ -539,17 +539,17 @@ body {
     font-family: "Poppins", sans-serif;
     color: #544837; }
 
-.news {
+.section-news {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef; }
-  .news-name {
+  .section-news-name {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 34px;
     line-height: 51px;
     font-family: "Poppins", sans-serif;
     color: #2f281e; }
-  .news-text {
+  .section-news-text {
     margin-bottom: 55px;
     font-weight: 500;
     font-size: 16px;
