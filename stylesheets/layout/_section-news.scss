@@ -1,41 +1,71 @@
 .news {
   padding-bottom: 120px;
-  border-bottom: 1px solid $light-grey  ;
-  .news-mainHeader{
+  border-bottom: 1px solid $light-color;
+
+  &-name {
     margin-bottom: 10px;
+    @include typography(700, 34px, 51px);
+    color: $brand-color;
   }
-  .news-mainText {
+
+  &-text {
     margin-bottom: 55px;
+    @include typography(500, 16px, 26px);
+    color: $paragraph-color;
   }
+
 }
+
 .news-cards {
-  display: flex;
-  justify-content: space-between;
+  @include flex-layout;
+
   .news-card {
-    width: 348px;
+    width: 32%;
     margin-bottom: 45px;
-    .news-card-img {
+
+    &-image {
       width: 100%;
     }
-    .news-card-smText {
+
+    span {
       margin: 25px 0 15px;
+      @include typography(400, 16px, 28px);
+      color: $paragraph-color;
     }
+
+    .author-name {
+      font-weight: bold;
+    }
+
+    .news-card-subhead {
+      @include typography(700, 24px, 34px);
+      color: $brand-color;
+    }
+
+    .active-title {
+      color: $primary-color;
+    }
+
   }
+
 }
+
 .carousel-buttons {
-  display: flex;
+  @include flex-layout;
   justify-content: center;
-  .carousel-button{
+
+  .dot {
+    display: block;
     margin-left: 10px;
-    .dot {
-      display: block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: $light-grey;
-    }
-    .active{
-      background-color: $yellow-button-color;
-    }
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $light-color;
+    cursor: pointer;
   }
+
+  .active {
+    background-color: $primary-color;
+  }
+
 }

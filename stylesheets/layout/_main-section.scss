@@ -1,20 +1,47 @@
-.main-section{
-  display:flex;
-  justify-content: space-between;
+.main-section {
+  @include flex-layout;
   margin-bottom: 110px;
-  .main-section-text{
-    width: 500px;
-    margin-top: 100px;
-  }
-  .main-section-name {
-    margin-bottom: 35px;
-  }
-  .main-section-parag {
-    margin-bottom: 50px;
-  }
-  .main-section-img{
-    margin-top: 35px;
 
+  &-text {
+    width: 50%;
+    margin-top: 100px;
+
+    &-header {
+      margin-bottom: 35px;
+      @include typography(700, 44px, 54px);
+      color: $brand-color
+    }
+
+    &-parag {
+      margin-bottom: 50px;
+      @include typography(400, 18px, 28px);
+      color: $paragraph-color;
+    }
+    
+    .btn-primary {
+      padding: 15px 41px;
+    }
+
+    .playing-link {
+      color: $primary-color;
+      @include typography(600, 16px, 24px);
+      text-decoration: underline;
+      padding: 0;
+      margin-left: 25px;
+    
+      &:before {
+        content: url('../assets/icons/triangle.svg');
+        vertical-align: sub;
+        padding-right: 8px;
+      }
+    
+    }
   }
+
+  &-image {
+    width: 50%;
+    margin-top: 35px;
+  }
+  
 }
 

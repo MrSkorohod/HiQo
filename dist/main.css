@@ -327,133 +327,10 @@ html {
 a {
   color: #2f281e;
   text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
 
-/**
- * Basic typography style for copy text
- */
 body {
   color: #222222;
   font: 400 14px/28px "Poppins", sans-serif; }
-
-.header-navigation {
-  color: #222222; }
-
-.header-logotype-name {
-  color: #173a56;
-  font: 700 30px/34px "Poppins", sans-serif; }
-
-.yellow-button {
-  color: #efefef;
-  font: 600 16px/24px "Poppins", sans-serif; }
-
-.gray-button {
-  color: #173a56;
-  font: 600 16px/24px "Poppins", sans-serif; }
-
-.main-section-name {
-  color: #2f281e;
-  font: 700 44px/54px "Poppins", sans-serif; }
-
-.main-section-parag {
-  color: #544837;
-  font: 400 18px/28px "Poppins", sans-serif; }
-
-.playing-button {
-  font: 600 16px/24px "Poppins", sans-serif;
-  text-decoration: underline; }
-
-.design-name {
-  color: #2f281e;
-  font: 700 36px/54px "Poppins", sans-serif; }
-
-.design-card .design-card-header {
-  color: #2f281e;
-  font: 600 22px/33px "Poppins", sans-serif; }
-
-.design-card .design-card-text {
-  color: #544837;
-  font: 500 16px/26px "Poppins", sans-serif; }
-
-.twoBlocks .twoBlocks-text-miniHead {
-  color: #544837;
-  font: 500 16px/24px "Poppins", sans-serif; }
-
-.twoBlocks .twoBlocks-text-header {
-  color: #2f281e;
-  font: 700 36px/64px "Poppins", sans-serif; }
-
-.twoBlocks .twoBlocks-text-article, .twoBlocks .twoBlocks-text-listItem {
-  color: #544837;
-  font: 500 16px/24px "Poppins", sans-serif; }
-
-.twoBlocks .twoBlocks-text-subheader {
-  color: #2f281e;
-  font: 700 16px/24px "Poppins", sans-serif; }
-
-.news .news-mainHeader {
-  color: #2f281e;
-  font: 700 34px/51px "Poppins", sans-serif; }
-
-.news .news-mainText {
-  color: #544837;
-  font: 500 16px/26px "Poppins", sans-serif; }
-
-.news .news-card-smText {
-  color: #544837;
-  font: 400 16px/28px "Poppins", sans-serif; }
-
-.news .author-name {
-  font-weight: bold; }
-
-.news .news-card-header {
-  color: #2f281e;
-  font: 700 24px/34px "Poppins", sans-serif; }
-
-.news .active-title {
-  color: #FF9900; }
-
-.footer .quick-links-header, .footer .legal-stuff-header, .footer .tel-form-header {
-  color: #2f281e;
-  font: 900 20px/30px "Poppins", sans-serif; }
-
-.footer .legal-stuff-item, .footer quick-links-item {
-  color: #544837;
-  font: 400 16px/35px "Poppins", sans-serif; }
-
-.footer .tel-form input, .footer .tel-form ::placeholder {
-  color: #BCD0E5;
-  font: 900 16px/28px "Poppins", sans-serif; }
-
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table; }
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
 
 /**
  * Hide text while making it readable for screen readers
@@ -487,26 +364,30 @@ body {
   justify-content: space-between;
   margin-top: 44px; }
 
-.header-logotype {
-  display: flex; }
-  .header-logotype .header-logotype-img, .header-logotype .header-logotype-name {
+.logotype {
+  display: flex;
+  justify-content: space-between; }
+  .logotype-image, .logotype-header {
     align-self: center;
-    margin-right: 13px; }
+    margin-right: 13px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    font-family: "Poppins", sans-serif;
+    color: #173a56; }
 
 .header-navigation {
   display: flex;
-  justify-content: space-between; }
-  .header-navigation .header-navigation-list {
+  justify-content: space-between;
+  color: #222222; }
+  .header-navigation-list {
     list-style: none;
-    justify-content: space-between;
     display: flex;
-    width: 350px;
+    justify-content: space-between;
     margin-left: 225px; }
-    .header-navigation .header-navigation-list .header-navigation-item {
-      align-self: center; }
-    .header-navigation .header-navigation-list .header-navigation-link {
-      color: #2f281e;
-      text-decoration: none; }
+  .header-navigation-item {
+    margin-left: 26px;
+    align-self: center; }
 
 .header-buttons {
   display: flex;
@@ -514,25 +395,49 @@ body {
   .header-buttons button {
     align-self: center;
     margin-right: 15px; }
-  .header-buttons .gray-button {
-    margin-left: 20px; }
+  .header-buttons .btn-secondary {
+    margin-left: 32px; }
   .header-buttons .hamburger {
     display: none; }
-    .header-buttons .hamburger rect {
-      fill: #FF9900; }
 
 .main-section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px; }
-  .main-section .main-section-text {
-    width: 500px;
+  .main-section-text {
+    width: 50%;
     margin-top: 100px; }
-  .main-section .main-section-name {
-    margin-bottom: 35px; }
-  .main-section .main-section-parag {
-    margin-bottom: 50px; }
-  .main-section .main-section-img {
+    .main-section-text-header {
+      margin-bottom: 35px;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      font-family: "Poppins", sans-serif;
+      color: #2f281e; }
+    .main-section-text-parag {
+      margin-bottom: 50px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      font-family: "Poppins", sans-serif;
+      color: #544837; }
+    .main-section-text .btn-primary {
+      padding: 15px 41px; }
+    .main-section-text .playing-link {
+      color: #ff9900;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "Poppins", sans-serif;
+      text-decoration: underline;
+      padding: 0;
+      margin-left: 25px; }
+      .main-section-text .playing-link:before {
+        content: url("../assets/icons/triangle.svg");
+        vertical-align: sub;
+        padding-right: 8px; }
+  .main-section-image {
+    width: 50%;
     margin-top: 35px; }
 
 .center-style {
@@ -540,81 +445,158 @@ body {
   margin: 0 auto;
   text-align: center; }
 
-.name-section {
-  width: 530px; }
+.design-tools-name {
+  width: 40%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  font-family: "Poppins", sans-serif;
+  color: #2f281e; }
 
-.design-background {
+.design-tools-background {
   background: url("../assets/img/Bg.png") no-repeat;
   background-size: 100% 100%;
   padding-bottom: 1px;
   margin-bottom: 120px; }
-  .design-background .design-cards {
+  .design-tools-background .design-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 60px; }
-    .design-background .design-cards .design-card {
-      width: 240px; }
-    .design-background .design-cards .design-card-img {
-      margin-bottom: 30px; }
-    .design-background .design-cards .design-card-header {
-      margin-bottom: 15px; }
-    .design-background .design-cards .design-card-text {
-      margin-bottom: 60px; }
-  .design-background .yellow-button {
-    margin-bottom: 90px; }
+    .design-tools-background .design-cards .design-card {
+      width: 34%; }
+      .design-tools-background .design-cards .design-card:not(:last-child) {
+        margin-right: 42px; }
+      .design-tools-background .design-cards .design-card-image {
+        margin-bottom: 30px; }
+      .design-tools-background .design-cards .design-card-name {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        font-family: "Poppins", sans-serif;
+        color: #2f281e; }
+      .design-tools-background .design-cards .design-card-text {
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        font-family: "Poppins", sans-serif;
+        color: #544837; }
+  .design-tools-background .btn-primary {
+    margin-bottom: 90px;
+    padding: 15px 32px; }
 
-.twoBlocks {
+.two-blocks {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px; }
 
-.twoBlocks-text {
-  width: 482px; }
-  .twoBlocks-text .twoBlocks-text-miniHead {
-    margin-bottom: 7px; }
-  .twoBlocks-text .twoBlocks-text-header {
-    margin-bottom: 25px; }
-  .twoBlocks-text .twoBlocks-text-article {
-    margin-bottom: 30px; }
-  .twoBlocks-text .twoBlocks-text-subheader {
-    margin-bottom: 15px; }
-  .twoBlocks-text .twoBlocks-text-listItem {
+.block-image {
+  width: 100%; }
+
+.block-text {
+  width: 50%; }
+  .block-text:nth-child(2n-1) {
+    margin-right: 100px; }
+  .block-text:nth-child(2) {
+    margin-left: 100px; }
+  .block-text-supname {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #544837; }
+  .block-text-name {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 64px;
+    font-family: "Poppins", sans-serif;
+    color: #2f281e; }
+  .block-text-parag {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #544837; }
+  .block-text-subhead {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #2f281e; }
+  .block-text-listItem {
     background: url("../assets/icons/list-marker.svg") no-repeat;
     padding: 5px 0px 10px 50px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #544837; }
 
 .news {
   padding-bottom: 120px;
   border-bottom: 1px solid #efefef; }
-  .news .news-mainHeader {
-    margin-bottom: 10px; }
-  .news .news-mainText {
-    margin-bottom: 55px; }
+  .news-name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    font-family: "Poppins", sans-serif;
+    color: #2f281e; }
+  .news-text {
+    margin-bottom: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Poppins", sans-serif;
+    color: #544837; }
 
 .news-cards {
   display: flex;
   justify-content: space-between; }
   .news-cards .news-card {
-    width: 348px;
+    width: 32%;
     margin-bottom: 45px; }
-    .news-cards .news-card .news-card-img {
+    .news-cards .news-card-image {
       width: 100%; }
-    .news-cards .news-card .news-card-smText {
-      margin: 25px 0 15px; }
+    .news-cards .news-card span {
+      margin: 25px 0 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: "Poppins", sans-serif;
+      color: #544837; }
+    .news-cards .news-card .author-name {
+      font-weight: bold; }
+    .news-cards .news-card .news-card-subhead {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      font-family: "Poppins", sans-serif;
+      color: #2f281e; }
+    .news-cards .news-card .active-title {
+      color: #ff9900; }
 
 .carousel-buttons {
   display: flex;
+  justify-content: space-between;
   justify-content: center; }
-  .carousel-buttons .carousel-button {
-    margin-left: 10px; }
-    .carousel-buttons .carousel-button .dot {
-      display: block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #efefef; }
-    .carousel-buttons .carousel-button .active {
-      background-color: #FF9900; }
+  .carousel-buttons .dot {
+    display: block;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #efefef;
+    cursor: pointer; }
+  .carousel-buttons .active {
+    background-color: #ff9900; }
 
 .footer {
   display: flex;
@@ -623,132 +605,154 @@ body {
   .footer .logotype {
     height: 25px; }
 
-.quick-links-header, .legal-stuff-header, .tel-form-header {
-  margin-bottom: 40px; }
+.quick-links-name {
+  margin-bottom: 40px;
+  color: #2f281e;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif; }
 
-.tel-form {
+.quick-links-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: "Poppins", sans-serif;
+  color: #544837; }
+
+.phone {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   width: 325px; }
-  .tel-form input {
+  .phone input {
     height: 50px;
-    border: 2px solid #BCD0E5;
+    border: 2px solid #bcd0e5;
     border-radius: 10px;
     margin-bottom: 25px;
     padding-left: 15px; }
-  .tel-form .yellow-button {
-    align-self: flex-start; }
+    .phone input::placeholder {
+      color: #bcd0e5;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: "Poppins", sans-serif; }
 
-button {
+.btn-primary {
+  align-self: flex-start; }
+
+.btn-primary {
   border-radius: 7px;
   padding: 15px 25px;
   border: 1px solid;
-  cursor: pointer; }
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  background: #ff9900;
+  border-color: #ffffff;
+  color: #efefef; }
 
-.yellow-button {
-  background: #FF9900;
-  border-color: #ffffff; }
-
-.gray-button {
+.btn-secondary {
+  border-radius: 7px;
+  padding: 15px 25px;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
   background: #ffffff;
-  border-color: #BCD0E5; }
-
-.playing-button {
-  background: #ffffff;
-  border: 0;
-  color: #FF9900;
-  padding: 0;
-  margin-left: 25px; }
-  .playing-button:before {
-    content: url("../assets/icons/triangle.svg");
-    vertical-align: sub;
-    padding-right: 8px; }
+  border-color: #bcd0e5;
+  color: #173a56; }
 
 .container {
-  width: 1126px; }
+  width: 100%;
+  max-width: 1126px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 @media all and (max-width: 1128px) {
   .container {
-    width: 1000px; }
-  .header-navigation ul {
+    max-width: 1000px; }
+  .header-navigation-list {
     margin-left: 0; }
-  .news-card div {
+  .design-tools-name {
+    width: 48%; }
+  .news-card {
     width: 269px; } }
 
 @media all and (max-width: 1024px) {
   .container {
-    width: 970px; }
-  .main-section img {
-    width: 50%; }
-  .section-in-two img {
-    width: 90%; }
-  .section-hero img:nth-child(4) {
-    left: 20px; }
-  .section-hero img:nth-child(5) {
-    left: 360px; }
-  .section-hero img:last-child {
-    left: 85px;
-    top: 160px; } }
+    max-width: 970px; } }
 
 @media all and (max-width: 960px) {
   .container {
-    width: 740px; }
-  .header-navigation ul {
+    max-width: 740px; }
+  .header-navigation-list {
     display: none; }
+  .design-tools-name {
+    width: 100%; }
   .main-section-text {
     width: 100%; }
-  .main-section img {
+  .main-section-image {
     display: none; }
-  .section-hero img {
-    display: none; }
-  .design-tools-cards {
+  .design-cards {
     flex-wrap: wrap; }
-  .design-background {
+  .design-card {
+    margin: 0 auto; }
+  .design-tools-background {
     background-position-y: bottom;
     background-size: 100%; }
-  .section-hero h2 {
-    padding-top: 140px; }
-  .section-hero button {
-    margin-bottom: 180px; }
-  .news-card div:last-child {
+  .news-card:last-child {
     display: none; }
   .footer {
     flex-wrap: wrap; }
-  .tel-form {
+  .phone {
     width: 275px;
     margin-top: -140px; } }
 
 @media all and (max-width: 740px) {
   .container {
     width: 100%; }
-  .header-buttons button {
+  .header-buttons .btn-primary,
+  .header-buttons .btn-secondary {
     display: none; }
   .header-buttons .hamburger {
-    display: inline-block; }
-  .section-in-two {
+    display: inline-block;
+    align-self: center; }
+  .two-blocks {
     flex-direction: column; }
-  .news-card div:first-child {
+  .block-text {
+    width: 100%; }
+    .block-text:nth-child(2) {
+      margin-left: 0; }
+  .block-image {
     display: none; }
-  .tel-form h3, .tel-form input {
+  .news-cards .news-card {
+    width: 70%;
+    margin: 0 auto 45px; }
+    .news-cards .news-card:first-child {
+      display: none; }
+  .phone .quick-links-name, .phone .quick-links-input {
     display: none; } }
 
 @media all and (max-width: 550px) {
-  .name-section {
-    width: 100%; }
-  .design-tools-cards div {
+  .playing-link {
+    display: none; }
+  .design-card {
     margin: 0 auto; }
-  .section-in-two-text {
+  .block-text {
     width: 100%; }
-  .section-hero p {
-    width: 100%; }
-  .news-card div {
+  .news-card {
     margin: 0 auto; }
   .footer {
     flex-direction: column;
     margin: 30px auto; }
     .footer .logotype {
       margin-bottom: 10px; }
-    .footer .tel-form {
+    .footer .phone {
       display: none; }
-    .footer h3 {
+    .footer .quick-links-name {
       margin-bottom: 0; } }
