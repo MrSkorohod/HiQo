@@ -12,7 +12,7 @@
     <header class="header container">
 
         <div class="logotype">
-            <img src="assets/icons/logo.svg" alt="Logo picture" class="logotype-image" />
+            <a href="#"><img src="assets/icons/logo.svg" alt="Logo picture" class="logotype-image" /></a>
         </div>
 
         <nav class="header-navigation">
@@ -29,9 +29,19 @@
             <button class="btn-primary">Sign Up</button>
 
             <div class="hamburger">
-                <a href="#">
-                    <img src="assets/icons/humburger.svg" alt="hamburger icon" />
-                </a>
+
+                    <input id="hamburger-toggle" type="checkbox" />
+                    <label class="hamburger-btn" for="hamburger-toggle">
+                      <span></span>
+                    </label>
+
+                    <ul class="hamburger-box">
+                      <li><a class="hamburger-item header-navigation-link" href="#">Product</a></li>
+                      <li><a class="hamburger-item header-navigation-link" href="#">Customers</a></li>
+                      <li><a class="hamburger-item header-navigation-link" href="#">Pricng</a></li>
+                      <li><a class="hamburger-item header-navigation-link" href="#">Resources</a></li>
+                    </ul>
+
             </div>
 
         </div>
@@ -47,8 +57,12 @@
                 <div class="main-section-text">
                     <h1 class="main-section-text-header">The Design Thinking superpowers</h1>
                     <p class="main-section-text-parag">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-                    <button class="btn-primary">Get started</button>
-                    <a class="playing-link" href="#">Watch the Video</a>
+                    
+                    <div class="main-section-text-btn">
+                        <button class="btn-primary">Get started</button>
+                        <a class="playing-link" href="#">Watch the Video</a>
+                    </div>
+
                 </div>
 
                 <img src="assets/img/mainPic.jpg" alt="Main picture" class="main-section-image" />
@@ -57,7 +71,7 @@
 
             <section class="design-tools">
 
-                <h2 class="design-tools-name center-style">We design tools to unveil your superpowers</h2>
+                <h2 class="design-tools-name center-style container">We design tools to unveil your superpowers</h2>
 
                 <div class="design-tools-background">
 
@@ -161,17 +175,17 @@
                     <div class="news-card">
                         <img src="assets/img/card_image.jpg" alt="Card picture" class="news-card-image" />
                         <span>By <span class="author-name">Abdullah</span> |  03 March 2019</span>
-                        <h3 class="news-card-subhead">Increasing Prosperity With Positive Thinking</h3>
+                        <h3 class="news-card-subhead"><a href="#">Increasing Prosperity With Positive Thinking</a></h3>
                     </div>
                     <div class="news-card">
                         <img src="assets/img/card_image_2.jpg" alt="Card picture" class="news-card-image" />
                         <span>By <span class="author-name">Abdullah</span> |  03 March 2019</span>
-                        <h3 class="news-card-subhead active-title">Motivation Is The First Step To Success</h3>
+                        <h3 class="news-card-subhead"><a href="#">Motivation Is The First Step To Success</a></h3>
                     </div>
                     <div class="news-card">
                         <img src="assets/img/card_image_3.jpg" alt="Card picture" class="news-card-image" />
                         <span>By <span class="author-name">Abdullah</span> |  03 March 2019</span>
-                        <h3 class="news-card-subhead">Success Steps For Your Personal Or Business Life</h3>
+                        <h3 class="news-card-subhead"><a href="#">Success Steps For Your Personal Or Business Life</a></h3>
                     </div>
                 </div>
 
@@ -191,17 +205,17 @@
     <footer class="footer container">
 
         <div class="logotype">
-            <img src="assets/icons/logo.svg" alt="Logo picture" class="logotype-image" />
+            <a href="#"><img src="assets/icons/logo.svg" alt="Logo picture" class="logotype-image" /></a>
         </div>
 
         <div class="quick-links">
             <nav>
                 <h3 class="quick-links-name">Quick Links</h3>
                 <ul>
-                    <li><a href="#" class="quick-links-link">About Us</a></li>
-                    <li><a href="#" class="quick-links-link">Blog</a></li>
-                    <li><a href="#" class="quick-links-link">Contact</a></li>
-                    <li><a href="#" class="quick-links-link">FAQ</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">About Us</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Blog</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Contact</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">FAQ</a></li>
                 </ul>
             </nav>
         </div>
@@ -210,10 +224,10 @@
             <nav>
                 <h3 class="quick-links-name">Legal Stuff</h3>
                 <ul>
-                    <li><a href="#" class="quick-links-link">Disclaimer</a></li>
-                    <li><a href="#" class="quick-links-link">Financing</a></li>
-                    <li><a href="#" class="quick-links-link">Privacy Policy</a></li>
-                    <li><a href="#" class="quick-links-link">Terms of Service</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Disclaimer</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Financing</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Privacy Policy</a></li>
+                    <li class="quick-links-item"><a href="#" class="quick-links-link">Terms of Service</a></li>
                 </ul>
             </nav>
         </div>

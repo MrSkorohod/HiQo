@@ -4,6 +4,14 @@
   background: $primary-color;
   border-color: $white-color;
   color: $light-color;
+  cursor: pointer;
+  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 40px 40px $logo-color inset;
+    
+  }
+
 }
 
 .btn-secondary {
@@ -12,4 +20,11 @@
   background: $white-color;
   border-color: $secondary-color;
   color: $logo-color;
+  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 40px 40px $logo-color inset;
+    color: $white-color;
+  }
+
 }

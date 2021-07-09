@@ -6,20 +6,73 @@
     width: 50%;
     margin-top: 100px;
 
+    @include screen ("desktop-small") {
+      width: 100%;
+      margin-top: 58px;
+    }
+
     &-header {
       margin-bottom: 35px;
       @include typography(700, 44px, 54px);
-      color: $brand-color
+      color: $brand-color;
+
+      @include screen ("tablet") {
+        text-align: center;
+      }
+
+      @include screen ("smartphone") {
+        @include typography(700, 34px, 44px);
+      }
+
+      @include screen ("smartphone-small") {
+        @include typography(700, 26px, 30px);
+        margin-bottom: 24px;
+      }
+
     }
 
     &-parag {
       margin-bottom: 50px;
       @include typography(400, 18px, 28px);
       color: $paragraph-color;
+
+      @include screen ("tablet") {
+        text-align: center;
+      }
+
+      @include screen ("smartphone") {
+        @include typography(400, 16px, 18px);
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+      }
+
+      @include screen ("smartphone") {
+        @include typography(400, 14px, 16px);
+        margin-bottom: 42px;
+      }
+
+    }
+    
+    &-btn {
+
+      @include screen ("tablet") {
+        text-align: center;
+      }
+
+      @include screen ("smartphone-small") {
+        @include flex-layout;
+        flex-direction: column;
+      }
+
     }
     
     .btn-primary {
       padding: 15px 41px;
+
+      @include screen ("smartphone-small") {
+        margin: 0 auto 26px;
+      }
+
     }
 
     .playing-link {
@@ -28,11 +81,25 @@
       text-decoration: underline;
       padding: 0;
       margin-left: 25px;
+      transition: all 150ms ease;
+
+      @include screen ("smartphone-small") {
+        margin-left: 0;
+      }
     
       &:before {
         content: url('../assets/icons/triangle.svg');
         vertical-align: sub;
         padding-right: 8px;
+        transition: all 150ms ease;
+      }
+
+      &:hover {
+
+        &::before{
+          padding-right: 28px;
+        }
+
       }
     
     }
@@ -41,7 +108,11 @@
   &-image {
     width: 50%;
     margin-top: 35px;
+
+    @include screen ("desktop-small") {
+      display: none;
+    }
+
   }
   
 }
-
