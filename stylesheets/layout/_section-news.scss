@@ -42,6 +42,9 @@
 
 .news-cards {
   @include flex-layout;
+  @include screen ("desktop-small") {
+    justify-content: space-around;
+  }
 
   .news-card {
     width: 32%;
@@ -132,7 +135,7 @@
     cursor: pointer;
 
     &:hover {
-      border: 3px solid $primary-color-rast;
+      border: 3px solid $primary-color-opacity;
     }
 
   }

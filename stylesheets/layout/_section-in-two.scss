@@ -17,9 +17,16 @@
 }
 
 .block-image {
-  width: 100%;
 
+  &-picture {
+    width: 100%;
+  }
+  
   @include screen ("desktop-small") {
+    align-self: center;
+  }
+  
+  @include screen ("tablet") {
     display: none;
   }
 
@@ -39,7 +46,7 @@
   &:nth-child(2n-1) {
     margin-right: 100px;
 
-    @include screen ("desktop-small") {
+    @include screen ("tablet") {
       margin-right: 0;
     }
 
@@ -48,7 +55,7 @@
   &:nth-child(2) {
     margin-left: 100px;
 
-    @include screen ("desktop-small") {
+    @include screen ("tablet") {
       margin-left: 0;
     }
 
@@ -121,10 +128,24 @@
 
   &-listItem {
     background: url("../assets/icons/list-marker.svg") no-repeat;
-    padding: 5px 0px 10px 50px;
-    margin-bottom: 10px;
+    padding: 5px 0 10px 64px;
+    margin-bottom: 26px;
+    background-position-y: 12px;
+    
+    &:first-child {
+      padding-right: 76px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 50px;
+    }
+
     @include typography(500, 16px, 24px);
     color: $paragraph-color;
+
+    @include screen ("desktop-small") {
+      padding-top: 16px;
+    }
 
     @include screen ("smartphone") {
       padding-bottom: 16px;

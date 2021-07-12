@@ -16,6 +16,10 @@
       @include typography(700, 44px, 54px);
       color: $brand-color;
 
+      @include screen ("desktop-small") {
+        @include typography(700, 40px, 50px);
+      }
+
       @include screen ("tablet") {
         text-align: center;
       }
@@ -35,6 +39,10 @@
       margin-bottom: 50px;
       @include typography(400, 18px, 28px);
       color: $paragraph-color;
+
+      @include screen ("desktop-small") {
+        @include typography(400, 16px, 24px);
+      }
 
       @include screen ("tablet") {
         text-align: center;
@@ -110,6 +118,11 @@
     margin-top: 35px;
 
     @include screen ("desktop-small") {
+      align-self: flex-start;
+      width: 40%;
+    }
+
+    @include screen ("tablet") {
       display: none;
     }
 

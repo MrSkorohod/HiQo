@@ -5,11 +5,10 @@
   border-color: $white-color;
   color: $light-color;
   cursor: pointer;
-  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
+  transition: background-color 150ms ease, color 150ms ease;
   
   &:hover {
-    box-shadow: 0 0 40px 40px $logo-color inset;
-    
+    background-color: $secondary-color;
   }
 
 }
@@ -18,12 +17,13 @@
   @include button-size;
   @include typography(600, 16px, 24px);
   background: $white-color;
-  border-color: $secondary-color;
-  color: $logo-color;
-  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
+  border-color: $light-gray;
+  color: $secondary-color;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
   
   &:hover {
-    box-shadow: 0 0 40px 40px $logo-color inset;
+    background-color: $secondary-color;
     color: $white-color;
   }
 

@@ -7,18 +7,7 @@
   padding-right: 20px; 
 
   @include screen ("desktop-large") {
-    max-width: 1000px;
-  }
-  
-  @include screen ("desktop") {
-    max-width: 970px;
-  }
-
-  @include screen ("desktop-small") {
-    max-width: 740px;
-  }
-  
-  @include screen ("tablet") {
     max-width: 100%;
   }
+  
 }
