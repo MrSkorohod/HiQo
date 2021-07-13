@@ -2,20 +2,81 @@
   @include flex-layout;
   margin: 100px auto;
 
+  @include screen ("desktop-small") {
+    flex-wrap: wrap;
+    margin: 46px auto;
+  }
+
+  @include screen ("smartphone") {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px auto;
+  }
+
   .logotype {
-    height: 25px;
+    align-self: flex-start;
+
+    @include screen ("desktop-small") {
+      align-self: center;
+    }
+    @include screen ("smartphone") {
+      margin-bottom: 10px;
+      grid-column: 1 / 3;
+      margin: 0 auto 25px;
+    }
+
   }
 
 }
-.quick-links-name {
-  margin-bottom: 40px;
-  color: $brand-color;
-  @include typography(900, 20px, 30px);
-}
 
-.quick-links-link {
-  @include typography(400, 16px, 35px);
-  color: $paragraph-color;
+.quick-links {
+  @include screen ("smartphone") {
+    margin: 0 auto;
+  }
+
+   &-name {
+    margin-bottom: 40px;
+    color: $brand-color;
+    @include typography(900, 20px, 30px);
+  
+    @include screen ("smartphone") {
+      margin-bottom: 16px;
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(900, 16px, 24px);
+    }
+  
+  }
+
+  &-item {
+
+    @include screen ("smartphone") {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &-link {
+    @include typography(400, 16px, 35px);
+    color: $paragraph-color;
+    padding-bottom: 5px;
+    
+    &:hover {
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+  
+    @include screen ("smartphone") {
+      @include typography(400, 16px, 24px);
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(400, 14px, 24px);
+    }
+
+  }
+
 }
 
 .phone {
@@ -23,16 +84,55 @@
   flex-direction: column;
   width: 325px;
 
-  input {
-    height: 50px;
-    border:2px solid $secondary-color;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    padding-left: 15px;
+  @include screen ("desktop-small") {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 36px;
+  }
 
-    &::placeholder {
-        color: $secondary-color;
-        @include typography(900, 16px, 28px);
+  @include screen ("smartphone") {
+    grid-column: 1 / 3;
+    flex-direction: column;
+  }
+
+  .quick-links {
+
+    &-name {
+
+      @include screen ("desktop-small") {
+        display: none;
+      }
+
+      @include screen ("tablet") {
+        display: none;
+      }
+
+    }
+
+    &-input {
+      height: 50px;
+      border:2px solid $light-gray;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      padding-left: 15px;
+      outline: 0;
+  
+      &::placeholder {
+          color: $light-gray;
+          @include typography(900, 16px, 28px);
+
+          @include screen ("smartphone") {
+            @include typography(900, 14px, 18px);
+          }
+
+      } 
+
+      @include screen ("desktop-small") {
+        width: 70%;
+      }
+
+      @include screen ("smartphone") {
+        width: 100%;
       }
 
     }
@@ -41,4 +141,15 @@
 
   .btn-primary {
     align-self: flex-start;
+
+    @include screen ("desktop-small") {
+      padding: 12px 25px;
+    }
+
+    @include screen ("smartphone") {
+      margin: 0 auto;
+    }
+
   }
+
+}

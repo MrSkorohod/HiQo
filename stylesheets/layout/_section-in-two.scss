@@ -1,21 +1,64 @@
 .two-blocks {
   @include flex-layout;
   margin-bottom: 120px;
+
+  @include screen ("desktop-small") {
+    margin-bottom: 80px;
+  }
+
+  @include screen ("tablet") {
+    flex-direction: column;
+  }
+
+  @include screen ("smartphone-small") {
+    margin-bottom: 50px;
+  }
+
 }
 
 .block-image {
-  width: 100%;
+
+  &-picture {
+    width: 100%;
+  }
+  
+  @include screen ("desktop-small") {
+    align-self: center;
+  }
+  
+  @include screen ("tablet") {
+    display: none;
+  }
+
 }
 
 .block-text {
   width: 50%;
 
+  @include screen ("desktop-small") {
+    width: 100%;
+  }
+
+  @include screen ("smartphone") {
+    width: 100%;
+  }
+
   &:nth-child(2n-1) {
     margin-right: 100px;
+
+    @include screen ("tablet") {
+      margin-right: 0;
+    }
+
   }
 
   &:nth-child(2) {
-    margin-left: 100px
+    margin-left: 100px;
+
+    @include screen ("tablet") {
+      margin-left: 0;
+    }
+
   }
 
   &-supname {
@@ -23,32 +66,98 @@
     margin-bottom: 7px;
     @include typography(500, 16px, 24px);
     color: $paragraph-color;
+
+    @include screen ("smartphone") {
+      @include typography(500, 14px, 22px);
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(500, 12px, 18px);
+    }
+
   }
 
   &-name {
     margin-bottom: 25px;
     @include typography(700, 36px, 64px);
     color: $brand-color;
+
+    @include screen ("smartphone") {
+      @include typography(700, 28px, 54px);
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(700, 18px, 24px);
+    }
+
   }
 
   &-parag {
     margin-bottom: 30px;
     @include typography(500, 16px, 24px);
     color: $paragraph-color;
+
+    @include screen ("smartphone") {
+      @include typography(500, 14px, 18px);
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(500, 12px, 16px);
+    }
+
   }
 
   &-subhead {
     margin-bottom: 15px;
     @include typography(700, 16px, 24px);
     color: $brand-color;
+
+    @include screen ("smartphone") {
+      @include typography(700, 14px, 18px);
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(700, 12px, 18px);
+    }
+
   }
 
   &-listItem {
     background: url("../assets/icons/list-marker.svg") no-repeat;
-    padding: 5px 0px 10px 50px;
-    margin-bottom: 10px;
+    padding: 5px 0 10px 64px;
+    margin-bottom: 26px;
+    background-position-y: 12px;
+    
+    &:first-child {
+      padding-right: 76px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 50px;
+    }
+
     @include typography(500, 16px, 24px);
     color: $paragraph-color;
+
+    @include screen ("desktop-small") {
+      padding-top: 16px;
+    }
+
+    @include screen ("smartphone") {
+      padding-bottom: 16px;
+      @include typography(500, 14px, 18px);
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(500, 12px, 18px);
+    }
+
   }
 
 }

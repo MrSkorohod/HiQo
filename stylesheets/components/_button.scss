@@ -4,12 +4,27 @@
   background: $primary-color;
   border-color: $white-color;
   color: $light-color;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+  
+  &:hover {
+    background-color: $secondary-color;
+  }
+
 }
 
 .btn-secondary {
   @include button-size;
   @include typography(600, 16px, 24px);
   background: $white-color;
-  border-color: $secondary-color;
-  color: $logo-color;
+  border-color: $light-gray;
+  color: $secondary-color;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+  
+  &:hover {
+    background-color: $secondary-color;
+    color: $white-color;
+  }
+
 }

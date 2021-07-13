@@ -2,26 +2,71 @@
   padding-bottom: 120px;
   border-bottom: 1px solid $light-color;
 
+  @include screen ("desktop-small") {
+    padding-bottom: 52px;
+  }
+
   &-name {
     margin-bottom: 10px;
     @include typography(700, 34px, 51px);
     color: $brand-color;
+
+    @include screen ("smartphone") {
+      @include typography(700, 28px, 54px);
+    }
+
+    @include screen ("smartphone") {
+      @include typography(700, 18px, 24px);
+    }
+
   }
 
   &-text {
     margin-bottom: 55px;
     @include typography(500, 16px, 26px);
     color: $paragraph-color;
+
+    @include screen ("smartphone") {
+      @include typography(500, 14px, 18px);
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+    }
+
+    @include screen ("smartphone-small") {
+      @include typography(500, 12px, 16px);
+    }
+
   }
 
 }
 
 .news-cards {
   @include flex-layout;
+  @include screen ("desktop-small") {
+    justify-content: space-around;
+  }
 
   .news-card {
     width: 32%;
     margin-bottom: 45px;
+
+    @include screen ("desktop-large") {
+      width: 32%;
+    }
+
+    @include screen ("tablet") {
+      width: 70%;
+      margin: 0 auto 45px;
+
+      &:first-child {
+        display: none;
+      }
+
+    }
+
+    @include screen ("smartphone") {
+      margin: 0 auto 26px;
+    }
 
     &-image {
       width: 100%;
@@ -31,19 +76,45 @@
       margin: 25px 0 15px;
       @include typography(400, 16px, 28px);
       color: $paragraph-color;
+
+      @include screen ("smartphone") {
+        @include typography(400, 14px, 18px);
+      }
+
+      @include screen ("smartphone-small") {
+        @include typography(400, 12px, 16px);
+      }
+
     }
 
     .author-name {
       font-weight: bold;
     }
 
-    .news-card-subhead {
+    &-subhead {
       @include typography(700, 24px, 34px);
       color: $brand-color;
+
+      & a:hover {
+        color: $primary-color;
+      }
+
+      @include screen ("smartphone") {
+        @include typography(700, 18px, 24px);
+      }
+
+      @include screen ("smartphone-small") {
+        @include typography(700, 16px, 20px);
+      }
+
     }
 
-    .active-title {
-      color: $primary-color;
+    &:last-child {
+
+      @include screen ("desktop-small") {
+        display: none;
+      }
+
     }
 
   }
@@ -62,6 +133,11 @@
     border-radius: 50%;
     background-color: $light-color;
     cursor: pointer;
+
+    &:hover {
+      border: 3px solid $primary-color-opacity;
+    }
+
   }
 
   .active {

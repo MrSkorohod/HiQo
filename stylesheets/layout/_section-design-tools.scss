@@ -8,6 +8,19 @@
   width: 40%;
   @include typography(700, 36px, 54px);
   color: $brand-color;
+
+  @include screen ("desktop-large") {
+    width: 100%;
+  }
+
+  @include screen ("smartphone") {
+    @include typography(700, 26px, 44px);
+  }
+
+  @include screen ("smartphone-small") {
+    @include typography(700, 18px, 24px);
+  }
+  
 }
 
 .design-tools-background {
@@ -16,16 +29,51 @@
   padding-bottom: 1px;
   margin-bottom: 120px;
 
+  @include screen ("desktop-small") {
+    background-position-y: bottom;
+    background-size: 100%;
+    margin-bottom: 80px;
+  }
+
   .design-cards {
     @include flex-layout;
     margin-top: 60px;
 
-    
+    @include screen ("desktop-small") {
+      flex-wrap: wrap;
+    }
+
+    @include screen ("smartphone") {
+      flex-direction: column;
+    }
+
     .design-card {
       width: 34%;
+
+      @include screen ("desktop-small") {
+        margin: 0 auto;
+      }
+
+      @include screen ("smartphone") {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 88px 1fr;
+        grid-template-rows: 32px 1fr;
+      }
+      
+      @include screen ("smartphone-small") {
+        grid-template-rows: 32px 74px;
+      }
       
       &:not(:last-child) {
-        margin-right: 42px;
+       margin-right: 42px;
+
+
+       @include screen ("desktop-small") {
+        margin-right: auto;
+       }
+
       }
 
       &-image {
@@ -36,12 +84,33 @@
         margin-bottom: 15px;
         @include typography(600, 22px, 33px);
         color: $brand-color;
+
+        @include screen ("smartphone") {
+          @include typography(600, 18px, 23px);
+        }
+
+        @include screen ("smartphone-small") {
+          @include typography(600, 16px, 18px);
+        }
+
       }
 
       &-text {
         margin-bottom: 60px;
         @include typography(500, 16px, 26px);
         color: $paragraph-color;
+
+        @include screen ("smartphone") {
+          grid-column: 2;
+          @include typography(500, 14px, 24px);
+          letter-spacing: 0.5px;
+          word-spacing: 2px;
+        }
+
+        @include screen ("smartphone-small") {
+          @include typography(500, 12px, 18px);
+        }
+
       }
 
     }
