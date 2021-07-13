@@ -146,26 +146,17 @@
       visibility: hidden;
       top: -24px;
       right: 0;
-      width: 36%;
+      width: 100%;
       margin: 0;
       padding: 80px 0;
       list-style: none;
       text-align: center;
       background-color: $light-color;
       box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
-      @include screen ("tablet") {
-        width: 52%;
-      }
-
-      @include screen ("smartphone") {
-        width: 64%;
-      }
-
     }
 
     &-item {
-      display: block;
+      display: inline-block;
       padding: 12px 24px;
       color: $primary-color;
       margin-bottom: 6px;
